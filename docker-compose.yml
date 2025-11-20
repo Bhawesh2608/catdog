@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  catdog:
+    build: .
+    container_name: catdog-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src:/app/src
+      - ./models:/app/models
+    restart: unless-stopped
+
