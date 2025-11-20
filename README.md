@@ -79,3 +79,17 @@ catdog/
 │── Dockerfile
 │── docker-compose.yml
 └── README.md
+
+## ▶️ How to Run
+pip install -r requirements.txt
+python src/train.py
+
+##2️⃣ Train the model
+python src/train.py
+
+##3️⃣ Start the Streamlit App
+streamlit run src/app.py
+
+##🐳 Run with Docker
+Build and run:
+docker compose up --build
